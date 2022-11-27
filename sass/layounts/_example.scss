@@ -1,0 +1,47 @@
+.pictures {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.pictures__text__wrap {
+    position: relative;
+
+}
+
+.pictures__text {
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    height: 70px;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
+
+.pictures__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.pictures__list {
+    display: flex;
+}
+
+.pictures__item {
+    margin-right: 30px;
+}

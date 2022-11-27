@@ -1,0 +1,64 @@
+.card {
+    padding-top: 94px;
+
+
+}
+
+.card__list {
+    max-width: 1170px;
+    display: flex;
+    gap: 30px;
+}
+
+.card__title {
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-title-color)
+}
+
+
+.card__item {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    gap: 30px;
+}
+
+.card__icon::before {
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+
+.item-antena::before {
+    background-image: url(../images/antenna.svg);
+    background-size: 70px 70px;
+    border-radius: 4px;
+}
+
+.item-clock::before {
+    background-image: url(../images/clock.svg);
+    background-size: 70px 70px;
+    border-radius: 4px;
+}
+
+.item-diagrama::before {
+    background-image: url(../images/diagram.svg);
+    background-size: 70px 70px;
+    border-radius: 4px;
+}
+
+.item-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+    background-size: 70px 70px;
+    border-radius: 4px;
+}
