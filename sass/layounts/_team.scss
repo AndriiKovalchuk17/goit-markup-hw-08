@@ -1,8 +1,23 @@
 .team {
+    flex-wrap: wrap;
     margin: 0 auto;
     padding-top: 94px;
     padding-bottom: 94px;
     background: #F5F4FA;
+    @media screen and (min-width: 480px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 }
 
 .team-lid {
@@ -23,13 +38,31 @@
 
 .team-list {
     display: flex;
-    flex: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    
 
 }
 
 .team-item {
-    width: calc((100% - 60px) / 3);
+    // width: calc((100% - 60px) / 3);
+    
+    width: 100%;
     margin-right: 30px;
+    @media screen and (min-width: 480px) {
+            width: 100%;
+            margin-right: 0px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+            margin-right: 0px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 90px) / 4);
+            
+        }
 }
 
 .team-item-title {
@@ -60,6 +93,7 @@
 
 .team-soc-icon {
     fill: currentColor;
+    
 }
 
 

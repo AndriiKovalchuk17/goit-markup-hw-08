@@ -1,6 +1,19 @@
 .card {
     padding-top: 94px;
+@media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
 }
 
@@ -8,6 +21,11 @@
     max-width: 1170px;
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    
+}
 }
 
 .card__title {
@@ -16,27 +34,50 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main-title-color)
+    color: var(--main-title-color);
+    
+    @media screen and (min-width: 480px) {
+            text-align: center;
+        }
+    
+        @media screen and (min-width: 768px) {
+            text-align: left;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
 }
 
 
-.card__item {
+.card__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
     gap: 30px;
+    
 }
-
+.card__icon {
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 90px) / 4);
+            flex-wrap: nowrap;
+    
+        }
+}
 .card__icon::before {
     display: block;
     content: "";
-    width: 270px;
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F5F4FA;
     margin-bottom: 30px;
+    
 }
 
 .item-antena::before {

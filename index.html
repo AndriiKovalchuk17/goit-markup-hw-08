@@ -24,6 +24,11 @@
       <div class="conteiner header__conteiner">
       <nav class="navigation">
         <a class="logo" href="/"><span class="logo__spn">Web</span>Studio </a>
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="mob-menu__btn-open" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
         <ul class="menu list">
           <li class="menu__item"><a class="menu__link link current " href="">Студія</a></li>
           <li class="menu__item"><a class="menu__link link" href="./portfolio.html">Портфоліо</a></li>
@@ -41,11 +46,65 @@
         <use href="./images/symbol-defs.svg#icon-Vector-1">                       
         </use>
       </svg>+38 096 111 11 11</a>
+      </div>      
       </div>
-    </div>
+      </div>
+    <div class="conteiner">
+      <div class="mob-menu ">
+        <button type="button" class="menu-close">
+          <svg class="mob-menu__btn" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close2"></use>
+          </svg>
+        </button>
+        <div class="mob-menu">
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a href="./index.html" class="mob-menu-link">Студія</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="./portfolio.html" class="mob-menu-link"
+                >Портфоліо</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="#" class="mob-menu-link">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mob-bottom">
+          <ul class="mob-contact list">
+            <li class="mob-contact__tel mob-contact-tel">
+              <a href="tel:380961111111" class="mob-contact__tel link">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="mob-contact-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mob-contact__mail link"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mob-soc list">
+            <li class="mob-soc-item">
+              <a href="#" class="mob-soc-link link">Instagram</a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="#" class="mob-soc-link link">Twitter</a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="#" class="mob-soc-link link">Facebook</a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="#" class="mob-soc-link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>    
     </header>
     <main>
-      <section class="hero">
+      <section class="hero gradient">
         <div class="conteiner">
         <h1 class="hero__title">
           Ефективні рішення для <br />
@@ -60,27 +119,27 @@
           <li class="card__icon item-antena">
             <h2 class="visually-hidden">наші переваги</h2>
             <h3 class="card__title">увага до деталей</h3>
-            <p class="card__item">
+            <p class="card__text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
           <li class="card__icon item-clock">
             <h3 class="card__title">пунктуальність</h3>
-            <p class="card__item">
+            <p class="card__text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
           <li class="card__icon item-diagrama">
             <h3 class="card__title">планування</h3>
-            <p class="card__item">
+            <p class="card__text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
           <li class="card__icon item-astronaut">
             <h3 class="card__title">сучасні технології</h3>
-            <p class="card__item">
+            <p class="card__text">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
@@ -133,7 +192,21 @@
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list list">
           <li class="team-item">
-            <img src="./images/img.jpg" alt="Працівник 1" width="270" />
+            <picture>
+              <source srcset="./images/img.jpg  1x,
+              ./images/team1-2x.jpg  2x" 
+              media="min-width: 1200px"/>
+              <source
+              srcset="./images/team1-tab.jpg  1x,
+              ./images/team1-tab2x.jpg  2x" 
+              media="min-width: 768px"/>
+              <source
+              srcset="./images/team1-mob.jpg  1x,
+              ./images/team1-mob2x.jpg  2x" 
+              media="min-width: 480px"/>
+              <img
+            src="./images/team1-mob.jpg" alt="Працівник 1" width="450" />
+            </picture>
             <div class="team-lid">
               <h3 class="team-item-title">Ігор Дем'яненко</h3>
               <p class="team-item-text">Product Designer</p>
@@ -173,7 +246,20 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="./images/img1.jpg" alt="Працівник 2" width="270" />
+            <picture>
+              <source srcset="./images/img1.jpg  1x,
+              ./images/team2-2x.jpg  2x" 
+              media="min-width: 1200px"/>
+              <source
+              srcset="./images/team2-tab.jpg  1x,
+              ./images/team2-tab2x.jpg  2x" 
+              media="min-width: 768px"/>
+              <source
+              srcset="./images/team2-mob.jpg  1x,
+              ./images/team2-mob2x.jpg  2x" 
+              media="min-width: 480px"/>
+              <img src="./images/team2-mob.jpg" alt="Працівник 2" width="450" />
+            </picture>            
             <div class="team-lid">
             <h3 class="team-item-title">Ольга Рєпіна</h3>
             <p class="team-item-text">Frontend Developer</p>
@@ -211,7 +297,20 @@
           </div>
           </li>
           <li class="team-item">
-            <img src="./images/img2.jpg" alt="Працівник 3" width="270" />
+            <picture>
+              <source srcset="./images/img2.jpg  1x,
+              ./images/team3-2x.jpg  2x" 
+              media="min-width: 1200px"/>
+              <source
+              srcset="./images/team3-tab.jpg  1x,
+              ./images/team3-tab2x.jpg  2x" 
+              media="min-width: 768px"/>
+              <source
+              srcset="./images/team3-mob.jpg  1x,
+              ./images/team3-mob2x.jpg  2x" 
+              media="min-width: 480px"/>
+              <img src="./images/team3-mob.jpg" alt="Працівник 2" width="450" />
+            </picture>       
             <div class="team-lid">
             <h3 class="team-item-title">Микола Тарасов</h3>
             <p class="team-item-text">Marketing</p>
@@ -249,7 +348,20 @@
           </div>
           </li>
           <li class="team-item">
-            <img src="./images/img3.jpg" alt="Працівник 4" width="270" />
+            <picture>
+              <source srcset="./images/img3.jpg  1x,
+              ./images/team4-2x.jpg  2x" 
+              media="min-width: 1200px"/>
+              <source
+              srcset="./images/team4-tab.jpg  1x,
+              ./images/team4-tab2x.jpg  2x" 
+              media="min-width: 768px"/>
+              <source
+              srcset="./images/team4-mob.jpg  1x,
+              ./images/team4-mob2x.jpg  2x" 
+              media="min-width: 480px"/>
+              <img src="./images/team4-mob.jpg" alt="Працівник 2" width="450" />
+            </picture>
             <div class="team-lid">
               <h3 class="team-item-title">Михайло Єрмаков</h3>
               <p class="team-item-text">UI Designer</p>

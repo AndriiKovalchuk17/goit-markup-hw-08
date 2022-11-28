@@ -1,0 +1,67 @@
+.menu-open {
+    margin-left: auto;
+    
+    
+}
+
+.mob-menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.mob-menu {}
+
+.menu-close {
+    margin-left: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.mob-menu__btn {}
+
+.mob-menu-list {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.mob-menu-item {
+    font-weight: 500;
+        font-size: 40px;
+        line-height: 1.75;
+        letter-spacing: 0.02em;
+        color: #212121;
+}
+
+.mob-menu-link {
+    
+}
+
+.mob-bottom {}
+
+.mob-contact {}
+
+.list {}
+
+.mob-contact__tel {}
+
+.mob-contact-tel {}
+
+.link {}
+
+.mob-contact-item {}
+
+.mob-contact__mail {}
+
+.mob-soc {}
+
+.mob-soc-item {}
+
+.mob-soc-link {}

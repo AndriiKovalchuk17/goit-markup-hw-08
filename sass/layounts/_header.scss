@@ -13,17 +13,19 @@
 
 .header__connect {
     margin-left: auto;
-
+    // display: none;
 }
 
 .navigation {
     display: flex;
     align-items: center;
+    
 }
 
 .menu {
     display: flex;
     gap: 50px;
+    
 
 }
 
@@ -71,6 +73,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #2196F3;
+    
 }
 
 .menu__link {
@@ -101,6 +104,7 @@
                 & {
                     fill: currentColor;
                 }
+                display: none;
 }
 
 .mail-icon {
@@ -138,4 +142,13 @@
         & {
         fill: #2196F3;
                 }
+                display: none;
+}
+
+.menu-open {
+    margin-left: auto;
+    
+}
+.menu-mobile {
+    
 }
