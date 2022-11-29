@@ -1,5 +1,5 @@
 .card {
-    padding-top: 94px;
+    padding-top: 94px 0;
 @media screen and (min-width: 480px) {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -12,12 +12,13 @@
 
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
-        padding-bottom: 94px;
+        padding-bottom: 118px;
     }
 
 }
 
 .card__list {
+    list-style: none;
     max-width: 1170px;
     display: flex;
     gap: 30px;
@@ -35,6 +36,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-title-color);
+    
     
     @media screen and (min-width: 480px) {
             text-align: center;
@@ -73,6 +75,7 @@
     display: block;
     content: "";
     height: 120px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F5F4FA;
