@@ -1,11 +1,15 @@
 @import "./utils/vars";
 @import "./base/common";
 @import "./сomponents/container";
+@import "./utils/mixins";
 @import "./utils/hidden";
 @import "./base/reset";
 
 
 @import "./layounts/header";
+@import "./layounts/modal-close";
+@import "./layounts/modal";
+@import "./layounts/menu-mob";
 @import "./layounts/hero";
 @import "./layounts/features";
 @import "./layounts/pictures";

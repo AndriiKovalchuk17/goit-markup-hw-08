@@ -10,7 +10,7 @@
 .modal {
     width: 528px;
     max-height: 581px;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: #FFFFFF;
     position: absolute;
     top: 50%;
@@ -21,12 +21,15 @@
         .backdrop.is-hidden & {
             transform: translate(-50%, -50%) scaleY(0);
         }
-
+    @media screen and (min-width: 480px) {
+    max-width: 450px;
+    min-height: 609px;
+}
 }
 
-// .backdrop.is-hidden .modal {
-//     transform: translate(-50%, -50%) scaleY(0);
-// }
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scaleY(0);
+}
 
 .modal-close {
     width: 30px;
@@ -175,6 +178,7 @@
                 border-color: #2196F3;
             }
         }
+        
 }
 
 

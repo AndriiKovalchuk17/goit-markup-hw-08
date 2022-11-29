@@ -28,3 +28,9 @@ img {
 address {
     font-style: normal;
 }
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
