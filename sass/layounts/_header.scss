@@ -54,7 +54,7 @@
 }
 
 .logo {
-    margin-right: 93px;
+    margin-right: 92px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -64,6 +64,15 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-style: normal;
     text-decoration: none;
+    @media screen and (min-width: 480px) {
+            margin-right: 276px;
+        }
+    @media screen and (min-width: 768px) {
+            margin-right: 88px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: 92px;
+        }
 }
 
 .logo__spn {
@@ -111,8 +120,7 @@
 
 }
 
-.connect__mail {
-    margin-right: 50px;
+.connect {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -130,22 +138,34 @@
                 }
                 @media screen and (min-width: 768px) {
                 padding: 0px;
+                font-size: 12px;
                 }
+        .tel-icon:hover,
+        .tel-icon:focus & {
+            fill: #2196F3;
+        }
+        @media screen and (min-width: 1200px) {
+            color: #757575;
+            text-decoration: none;
+            font-style: normal;
+            line-height: 1.14;
+            align-items: center;
+            padding: 0px;
+            display: flex;
+    
+        }
                 
-                @media screen and (min-width: 1200px) {
-                padding-top: 32px;
-                padding-bottom: 32px;
-                }
+                
 }
 
 .mail-icon {
-    width: 16px;
-    height: 12px;
+    width: 14px;
+    height: 10px;
     margin-right: 10px;
     fill: currentColor;
     @include desktop {
-            width: 14px;
-            height: 10px;
+            width: 16px;
+            height: 12px;
         }
     }
 
@@ -154,12 +174,12 @@
 
 .tel-icon {
     width: 10px;
-    height: 16px;
+    height: 14px;
     margin-right: 10px;
     fill: currentColor;
     @include desktop {
-            width: 14px;
-            height: 10px;
+            width: 10px;
+            height: 16px;
         }
     }
 
@@ -194,8 +214,7 @@
                 align-items: center;
                 padding: 0px;
                 display: flex;
-                padding-top: 32px;
-                padding-bottom: 32px;
+                
                 }
                 
 }
@@ -223,6 +242,17 @@
 }
 .mob-menu__btn-open {
     fill: currentColor;
+    width: 24px;
+    height: 16px;
+    display: inline-flex;
+    color: #000000;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            color: #2196F3;
+        }
+    
     
 }
 
@@ -241,7 +271,7 @@
     padding-top: 48px;
     padding-bottom: 48px;
     display: flex;
-    flex-direction: column;
+    
     justify-content: space-between;
     overflow: auto;
     >.container {
@@ -255,7 +285,6 @@
 .menu-close {
     margin-left: auto;
     display: block;
-    margin-bottom: 30px;
     position: absolute;
     right: 15px;
     top: 10px;
@@ -307,6 +336,11 @@
     line-height: calc(47 / 40);
     letter-spacing: 0.02em;
     color: #212121;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: #2196F3;
+        }
 }
 
 .link {}
