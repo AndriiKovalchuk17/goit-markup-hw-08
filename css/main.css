@@ -1471,13 +1471,22 @@ address {
 }
 
 .footer-logo {
-  font-family: "Raleway";
-  font-style: normal;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
+  line-height: 1.2;
+  display: block;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .footer-logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 
 .logo-wrap {
@@ -1486,6 +1495,18 @@ address {
 
 .footer-logo-spn {
   color: #2196F3;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  display: inline-block;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .footer-logo-spn {
+    margin-left: 0;
+  }
 }
 
 .footer-link {
@@ -1506,37 +1527,35 @@ address {
 }
 
 .footer-flex {
+  width: 100%;
   display: flex;
   flex-direction: column;
-}
-@media screen and (min-width: 480px) {
-  .footer-flex {
-    gap: 60px;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-flex {
-    display: flex;
-    gap: 165px;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-direction: row;
-  }
+  align-items: center;
+  gap: 60px;
+  justify-content: flex-start;
 }
 @media screen and (min-width: 1200px) {
   .footer-flex {
     display: flex;
     gap: 94px;
+    justify-content: flex-start;
     align-items: baseline;
+    flex-direction: row;
   }
 }
 
 .footer-up {
+  gap: 60px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 320px) {
+  .footer-up {
+    gap: 60px;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+  }
 }
 @media screen and (min-width: 480px) {
   .footer-up {
@@ -1558,17 +1577,31 @@ address {
 @media screen and (min-width: 1200px) {
   .footer-up {
     display: flex;
-    gap: 94px;
     align-items: baseline;
+    gap: 94px;
   }
 }
 
 .footer-addres-list {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--second-title-color);
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.footer-addres-list :hover, .footer-addres-list :focus {
+  color: var(--hover-color);
+}
+@media screen and (min-width: 480px) {
+  .footer-addres-list {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-addres-list {
+    text-align: left;
+  }
 }
 
 .footer-item:not(:last-child) {
@@ -1606,6 +1639,11 @@ address {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .address-wrap {
+    align-items: flex-start;
+  }
 }
 
 .title-soc-footer {
@@ -1660,7 +1698,6 @@ address {
 .email-sec {
   display: flex;
   align-items: center;
-  gap: 20px;
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
@@ -1759,5 +1796,29 @@ address {
 .footer-label {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media screen and (min-width: 320px) {
+  .footer-label {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer-label {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-label {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-label {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */
